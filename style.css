@@ -1,0 +1,644 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif ;
+}
+
+html,body{
+    background: black;
+ overflow-x: hidden !important;
+}
+.background-inicio{
+    width: 100%;
+    object-fit: cover;
+    background: linear-gradient(90deg, #000 , #000e 0% , #0000), url('https://mundoconectado.com.br/uploads/chamadas/netflixplanocomadentre7e9usd.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+}
+header{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+.link-container{
+    display: flex;
+    gap: 30px;
+    margin-right: 30px;
+}
+@media(max-width: 700px){
+    .link-container{
+        display: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 2rem;
+        justify-content: center;
+        line-height: 2;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        background-color: #000;
+        z-index: 1;
+        animation:deslizar 1s ease;
+    }
+    .link-container li{
+        justify-content:center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    @keyframes deslizar{
+          0%{
+            transform: translateX(-100px);
+          }
+    }
+    .burger-container i{
+        height: 36px;
+        width: 36px;
+        position: absolute;
+        z-index: 2;
+        top: 70px;
+        right: 70px;
+        cursor: pointer;
+    }
+    .burger-container i{
+        display: block;
+        font-size: 30px;
+        color: white;
+    }
+}
+
+
+
+section{
+    padding: 50px;
+}
+.logo{
+    left: 0;
+    text-align: left;
+    justify-content: left;
+
+}
+.logo img{
+     width: 30%;
+}
+.link-container a{
+    text-decoration: none;
+    text-shadow: 2px 2px 3px rgb(255, 0, 0);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.frase-inicio{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 100px;
+    margin-left: 0px;
+    font-family: sans-serif;
+}
+.frase-inicio:first-child{
+    margin-left: -10px;
+}
+.perfis-netflix{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+.perfis-netflix h1{
+    text-transform: uppercase;
+    font-family: 'poppins';
+}
+.perfis-netflix img{
+    width:50%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.background-popcorn{
+    background:linear-gradient(60deg, #000 0%, red, black);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 700px;
+    padding: 0.5rem;
+    margin-top: 100px;
+
+}
+.popcorn-flex {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.popcorn-flex img{
+    width: 10%;
+}
+.popcorn-frase{
+    text-align: left;
+    padding-left: 2rem;
+    margin-top: 10px;
+}
+.popcorn-frase h2{
+    font-family: sans-serif;
+}
+.popcorn-frase a{
+    color: blue;
+    font-size: 20px;
+    line-height: 2;
+}
+@media screen and (max-width:800px){
+    .background-popcorn{
+     flex-direction: column;
+     width: 100%;
+    }
+    .popcorn-flex{
+        flex-direction: column;
+       text-align: center;
+       justify-content: center;
+       align-items: center;
+    }
+    .popcorn-frase{
+        text-align: center;
+        justify-content: center;
+    }
+    .popcorn-frase a{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+    }
+}
+.bloco-smart img{
+    width: 80%;
+    margin-left: -20px;
+}
+section.smart-flex{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+section.smart-flex .bloco-smart{
+    display: flex;
+}
+.smart-texto{
+    display: block;
+    color: white;
+    text-align: left;
+    margin-top: 100px;
+    font-size: 20px;
+    padding-left: 2rem;
+}
+.smart-texto h1{
+    font-family: sans-serif;
+    font-weight: 900;
+}
+.smart-texto p{
+    font-family: 'poppins';
+}
+@media screen and (max-width:800px){
+    section.smart-flex .bloco-smart{
+        flex-direction: column;
+        width: 100%;
+    }
+    .smart-texto{
+        flex-direction: column;
+        width: 100%;
+        margin-left: -20px;
+        font-size: 100%;
+        margin-top: -10px;
+    }
+}
+
+
+.container-img img{
+    width: 650px;
+    height: 500px;
+    margin-left: 0px;
+    object-fit: cover;
+}
+.container-img img:first-child{
+    margin-left: 0px;
+}
+.container-box{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.box-texto{
+    color: white;
+    text-align: center;
+    margin-top: -100px;
+    filter: saturate(100%);
+}
+.box-texto h1{
+    font-family: sans-serif;
+}
+.box-texto a{
+    text-decoration: none;
+    color: white;
+    line-height: 2;
+}
+.container-img img:hover{
+    filter:saturate(120%);
+}
+@media screen and (max-width:1000px){
+    .container-box{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .container-box .container-img{
+        margin-left: -30px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .box-texto h1{
+        font-size: 30px;
+        justify-content: center;
+        text-align: center;
+    }
+    .container-img img{
+        margin-left: -30px;
+        width:600px;
+        object-fit: cover;
+    }
+}
+.baixar-frase i{
+    color: red;
+}
+section.baixar{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: -100px;
+    margin-top: 50px;
+}
+.baixar-frase{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'poppins';
+    font-weight: 700;
+}
+
+.baixar img{
+    width: 30%;
+}
+@media screen and (max-width:700px){
+    section.baixar{
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0px;
+    }
+    section.baixar img{
+        width: 90%;
+    }
+    .baixar-frase{
+        margin-bottom: 20px;
+    }
+    section.kids{
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+    }
+    section.kids img{
+        width: 80%;
+        margin-left: -20px;
+        margin-top: 20px;
+    }
+}
+.kids{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.kids-frase{
+   color: white; 
+   margin-left: -50px;
+}
+.kids-frase h2{
+    font-size: 27px;
+    font-weight: 900;
+    font-family: 'poppins';
+}
+.kids-frase p{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.kids img{
+    width: 30%;
+    margin-left: 2rem;
+}
+section.pergunta{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background:rgb(63, 63, 63);
+}
+section.pergunta h2{
+    font-family: sans-serif;
+    font-size: 25px;
+
+}
+.perguntas-frase{
+  font-family: 'poppins'; 
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background:rgb(63, 63, 63);
+  margin-top: 50px;
+}
+.perguntas-frase {
+    font-size: 20px;
+}
+.perguntas-frase h1:hover{
+      text-decoration: underline;
+      cursor: pointer;
+}
+#respo-frase {
+    display: none;
+    animation: ladoRight  1s ease forwards;
+
+}
+@keyframes ladoRight{
+   0%{
+    transform: translateX(100px);
+   }
+}
+#respo-frase2 {
+    display: none;
+    margin-left: -0px;
+    animation: ladoRight  1s ease forwards;
+
+}
+@media screen and (max-width:700px){
+    section.pergunta{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-left: -0px;
+    }
+}
+.enquete{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.enquete-net {
+    justify-content: center;
+    align-items: center;
+}
+.enquete-net h1{
+    color: white;
+    font-size: 25px;
+    font-family: 'poppins';
+}
+form{
+    justify-content: center;
+    align-items: center;
+    line-height: 6;
+    display: flex;
+}
+form #txt{
+    width: 300px;
+    height: 8vh;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    text-indent: 10px;
+    border-color: gray;
+    border-style: solid;
+}
+#txt::placeholder{
+    color: red;
+}
+form #btn{
+    border-radius: 5px;
+    height: 8vh;
+    width: 100px;
+    background: red;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#btn:hover{
+    background: brown;
+}
+form.remover{
+    display: none;
+}
+@media screen and (max-width:500px){
+    form{
+        flex-direction: column;
+        width: 100%;
+    }
+    form #btn{
+        width: 300px;
+        margin-top: 20px;
+    }
+}
+footer{
+    text-align: left;
+    justify-content:center;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: -100px;
+}
+.items-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: -0px;
+}
+.items-footer h1{
+    color: white;
+    padding-left: 5rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    line-height: 3;
+}
+.items-footer a{
+    color: white;
+    padding-left: 5rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    line-height: 3;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.items-footer a:hover{
+    text-decoration: underline;
+}
+.items-footer h1{
+    color: gray;
+    font-size: 10px;
+}
+.idioma{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: -250px;
+    display: flex;
+}
+select{
+    width: 125px;
+    height: 6vh;
+}
+#lingua{
+    text-indent: 5px;
+    background: gray;
+    color: white;
+    border-radius: 5px;
+    border-color: white;
+    border-style: solid;
+}
+.social{
+    text-align: center;
+    margin-top: 40px;
+    margin-left: -250px;
+}
+.social a{
+    color: white;
+    transition: 0.5s;
+    font-size: 20px;
+}
+.social a:hover{
+    color: blue;
+}
+@media screen and (max-width:600px){
+    footer{
+        padding: 1rem;
+    }
+    .items-footer{
+        flex-direction: column;
+
+        width: 100%;
+    }
+    .idioma{
+        flex-direction: column;
+        text-align: center;
+        justify-content:center;
+        margin-left: 100px;
+    }
+    .social{
+        margin-left: 100px;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:500px){
+    .frase-inicio h1{
+        font-size: 23px;
+    }
+    .perfis-netflix img{
+        width: 90%;
+    }
+    .popcorn-flex h2{
+        font-size:18px;
+    }
+    .popcorn-flex a{
+        margin-left: -20px;
+    }
+    .bloco-smart img{
+        width: 100%;
+    }
+    .box-texto{
+        margin-left: 30px;
+    }
+    .box-texto h1{
+        font-size: 25px;
+    }
+    .baixar img{
+        width: 100%;
+    }
+    .baixar-frase{
+        margin-top: 50px;
+        text-align: left
+    }
+    .kids-frase{
+        text-align:right;
+        margin-left: 0px;
+    }
+    section.kids img{
+        width: 110%;
+    }
+    .kids-frase h2{
+      font-size: 30px;
+        }
+}
+
+
+@media screen and (min-width:500px) and (max-width:800px){
+    .frase-inicio h1{
+        font-size: 30px;
+    }
+    .perfis-netflix img{
+        width: 90%;
+    }
+    .popcorn-flex h2{
+        font-size:18px;
+    }
+    .popcorn-flex a{
+        margin-left: -20px;
+    }
+    .bloco-smart img{
+        width: 100%;
+    }
+    .box-texto{
+        margin-left: 30px;
+    }
+    .box-texto h1{
+        font-size: 25px;
+    }
+    .baixar img{
+        width: 100%;
+    }
+    .baixar-frase{
+        margin-top: 50px;
+        text-align: left
+    }
+    .kids-frase{
+        text-align:right;
+        margin-left: 0px;
+    }
+    section.kids img{
+        width: 100%;
+    }
+    .kids-frase h2{
+      font-size: 30px;
+        }
+}

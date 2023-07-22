@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-inicio">
+    <header>
+        <div class="logo">
+       <img src="https://images.ctfassets.net/4cd45et68cgf/7LrExJ6PAj6MSIPkDyCO86/542b1dfabbf3959908f69be546879952/Netflix-Brand-Logo.png?w=700&h=456" alt="">
+        </div>
+       <nav>
+        <div class="burger-container" onclick="menuShow()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="link-container">
+            <li>
+                <a href="">Inicio</a>
+            </li>
+            <li>
+                <a href=""></a>
+            </li>
+            <li>
+                <a href="/Inicio Netflix/entrar/entrar.html">entrar</a>
+            </li>
+        </ul>
+       </nav>
+    </header>
+       
+        <div class="frase-inicio">
+            <h1>Filmes, series e muito mais!</h1>
+        </div>
+
+
+        <div class="perfis-netflix">
+            <h1>Crie perfis</h1>
+           <img src="https://s2-techtudo.glbimg.com/EJ8Cwsme3iMZkEMr0MGSTa8ufJY=/0x0:1314x608/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2018/5/B/i159htThizP3kEDuj9Gg/netflix-capa.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="background-popcorn">
+        <div class="popcorn-flex">
+             <img src="https://cdn-icons-png.flaticon.com/512/3289/3289091.png" alt="">
+             <div class="popcorn-frase">
+            <h2>Netflix por apenas R$18.90.</h2>
+            <a href="https://www.netflix.com/signup">Saiba mais</a>
+             </div>
+        </div>
+    </div><!--BACKGROUND-->
+   
+
+    <section class="smart-flex">
+        <div class="bloco-smart">
+            <img src="https://cdn.dribbble.com/users/63650/screenshots/4686195/random-netflix.gif" alt="">
+            <div class="smart-texto">
+                <h1>Aproveite na TV</h1>
+                <p>Assista em Smart TVs, PlayStation,
+                <br> Xbox, Apple TV e outros.</p>
+            </div>
+        </div><!--bloco-->
+    </section>
+
+    <div class="container-box">
+        <div class="container-img">
+            <img src="https://e1.pxfuel.com/desktop-wallpaper/674/325/desktop-wallpaper-stranger-things-4-stranger-things-s4.jpg" alt="">
+            <div class="box-texto">
+                <h1>Assista Stranger things.</h1>
+                <a href="https://www.netflix.com/br/title/80057281">Assisitir</a>
+            </div>
+        </div>
+
+        <div class="container-img">
+            <img src="https://i.pinimg.com/originals/10/0f/cc/100fccba11212a0b672b537841896a81.jpg" alt="">
+            <div class="box-texto">
+                <h1>Assista Peak blinders.</h1>
+                <a href="https://www.netflix.com/br/title/80002479">Assisitir</a>
+            </div>
+        </div>
+    </div><!--container box-->
+
+
+    <section class="baixar">
+           <img src="https://www.edivaldobrito.com.br/wp-content/uploads/2021/07/netflix-agora-deixa-voce-assistir-o-conteudo-antes-de-concluir-o-download-2-1.jpg" alt="">
+            <div class="baixar-frase">
+                <h2>Baixe Filmes e Series.</h2>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="kids">
+         <div class="kids-frase">
+             <h2>Criei perfis Kids</h2>
+             <p>Deixe as crinças se aventurarem filmes e
+                <br> series 
+                só para elas.
+             </p>
+         </div>
+         <img src="https://i0.wp.com/www.namiradamamae.com.br/wp-content/uploads/2016/11/Tela-Perfil-Kids-Netflix.png?resize=640%2C316" alt="">
+ </section>
+
+
+  <section class="pergunta">
+    <h2>Perguntas</h2>
+     <div class="perguntas-frase">
+        <h1 onclick="liberar()">Quais dispositivos posso assistir?</h1>
+        <div id="respo-frase">
+        <p>Celulares, Tablets , laptop e TV.</p>
+        </div>
+     </div>
+
+     <div class="perguntas-frase">
+        <h1 onclick="liberar()">Quanto custa a Netflix?</h1>
+        <div id="respo-frase2">
+        <p>Os  planos variam de R$18,90 a R$55,90 por mês.</p>
+        </div>
+     </div>
+  </section>
+
+  <div class="enquete">
+    <div class="enquete-net">
+        <h1>Qual seu filme ou serie favorito?</h1>
+        <div class="enquete-input">
+            <form>
+            <input type="text" placeholder="opnião" id="txt">
+            <input  onclick="verificar()" type="button" value="enviar" id="btn">
+            </form>
+        </div>
+    </div>
+  </div>
+
+  <footer>
+     <div class="items-footer">
+        <div class="items-1">
+            <h1>voltar ao inicio</h1>
+            <a href="">inicio</a>
+        </div>
+        <div class="items-2">
+            <h1>Visitar o site oficial</h1>
+            <a href="https://www.netflix.com/br/">site oficial</a>
+        </div>
+        <div class="items-3">
+            <h1>entrar em conta</h1>
+            <a href="/Inicio Netflix/entrar/entrar.html">logar</a>
+        </div>
+     </div>
+
+     <div class="idioma">
+       <select name="list" id="lingua">
+        <option value="1" id="pt">Potuguês</option>
+        <option value="2" onclick="traduzir()" id="en">Ingles</option>
+       </select>
+       
+     </div>
+
+     <div class="social">
+        <a href="https://github.com/raulcacula/raulcacula">&copy;raulcacula <i class="fa-brands fa-github"></i></a>
+     </div>
+
+  </footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+   <script src="netflix.js"></script>
+    <script src="https://kit.fontawesome.com/43fd509247.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+</body>
+</html>
